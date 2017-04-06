@@ -1,97 +1,43 @@
-// 1) Make a div and give it an ID.
-// Using Javascript, put some text into that element.
-
-function myMessage() {
-	document.getElementById("text").innerHTML = "Hello planet earth!";	
-};
-
-myMessage();
-
-// 2) Make a string variable and use that to put
-// some text into an H1 using Javascript.
-
-var string = "this is a string";
-
-document.getElementById("title").innerHTML = string;
-
-// 3) Make a function that takes a user’s input (value)
-// and then console.logs the value. Initialize the function
-// (make it start) when you click a button.
-
-function myInput() {
-	var personInput = prompt("What is your name?");
-	console.log(personInput);
-}
-
-myInput();
-
-// 4) Make an array with five entries. Using a loop,
-// console.log each entry.
-
-var myArray = [0,1,2,3,4];
-
-for (i = 0; i < myArray.length; i++) {
-	console.log(i)
-}
-
-// 5) Create an object with at least three properties.
-// Console.log each property.
-
-var myObject = {
-	name: "Richard",
-	position: "Developer",
-	company: "ABC Company"
-}
-
-// dot notation
-console.log(myObject.name + " " + myObject.position + " " + myObject.company);
-// console.log(myObject.position);
-// console.log(myObject.company);
-
-// bracket notation
-// console.log(myObject[name]);
-// console.log(myObject[position]);
-// console.log(myObject[company]);
-
-// For loop console log
-// for (i = 0; i < myObject; i++) {
-// 	console.log(i);
-// }
-
-// 6) Create an array with multiple objects, each with
-// multiple properties. Use a for loop to console.log
-// the various properties.
-
-var multipleObject = [
+var allZodiac = [
 	{
-		name: "Adam",
-		lastName: "Doo",
-		position: "Full Developer"
+		zodiac: "aquarius",
+		strengths: "Progressive, original, independent, humanitarian",
+		weaknesses: "Runs from emotional expression, temperamental, uncompromising, aloof",
+		aquariusLikes: "Fun with friends, helping others, fighting for causes, intellectual conversation, a good listener",
+		element: "Air",
+		quality: "Fixed",
+		color: "Light-Blue, Silver",
+		day: "Saturday",
+		ruler: "Uranus, Saturn",
+		compatibility: "Leo, Sagittarius",
+		luckyNumbers: "4, 7, 11, 22, 29",
+		dateRange: "January 20 - February 18"
 	},
 	{
-		name: "Kathie",
-		lastName: "McManus",
-		position: "Back-end Developer"
-	},
-	{
-		name: "Michael",
-		lastName: "Jose",
-		position: "Web Developer"
+		zodiac: "pisces",
+		element: "Water",
+		strengths: "Compassionate, artistic, intuitive, gentle, wise, musical",
+		weaknesses: "Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr",
+		piscesLikes: "Being alone, sleeping, music, romance, visual media, swimming, spiritual themes",
+		quality: "Mutable",
+		color: "Mauve, Lilac, Purple, Violet, Sea green",
+		day: "Thursday",
+		ruler: "Neptune, Jupiter",
+		compatibility: "Virgo, Taurus",
+		luckyNumbers: "3, 9, 12, 15, 18, 24",
+		dateRange: "February 19 - March 20"
 	}
-]
+];
 
+function getZodiac() {
 
+	var userInput = document.getElementById("input").value.toLowerCase();
+	
+	for (i = 0; i < allZodiac.length; i++) {
+		if (userInput == allZodiac[i].zodiac) {
+			document.getElementById("showText").innerHTML = allZodiac[i].element;
+		} else if () {
 
-for (i = 0; i < multipleObject.length; i++) {
-	console.log(multipleObject[i].name + " " + multipleObject[i].lastName + " " + multipleObject[i].position);
-}
-
-
-
-
-
-
-
-
-
-
+		}
+	}
+};

@@ -32,27 +32,47 @@
 	<link href="css/main.css" rel="stylesheet">
 	
 	<!-- TITLE -->
-	<title>Week 8</title>
+	<title>Zodiac App</title>
 
 </head>
 
 <body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>What is your Zodiac?</h1>
+			</div>
+
+			<div class="col-md-12">
+				<input type="text" id="input">
+				<button type="button" id="submit" onclick="getZodiac()">Submit</button>
+			</div>
+
+			<div class="col-md-12">
+				<h2 id="zodiac"></h2>
+				<p id="showText"></p>
+			</div>
+		</div>
+	</div>
+
 	
-	<div id="text"></div>
 
-	<h1 id="title"></h1>
 
-	<p>Type your name here</p>
-	<p id="input"></p>
+
+
+
+
+
+
+
+	<!-- JavaScript file -->
+	<script src="js/main.js"></script>
 
 	<!-- JQUERY -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	<!-- jQuery -->
-	<script src="js/main.js"></script>
 
 </body>
 
