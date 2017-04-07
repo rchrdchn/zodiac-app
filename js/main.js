@@ -178,7 +178,8 @@ function getZodiac() {
 	
 	for (i = 0; i < allZodiac.length; i++) {
 		if (userInput == allZodiac[i].zodiac) {
-			document.getElementById("showText").innerHTML = allZodiac[i].element;
+			document.getElementById("zodiac").innerHTML = allZodiac[i].zodiac;
+			document.getElementById("showText").innerHTML = allZodiac[i].strengths;
 		} 
 	}
 };
