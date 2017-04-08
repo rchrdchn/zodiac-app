@@ -5,17 +5,14 @@
 	text-transform: capitalize;
 }
 
-.title, #zodiac {
-	margin-bottom: 30px;
+.title {
+	margin-top: 100px;
 }
 
-/* #input {
-	border-radius: 3px;
-    padding: 3px 50px;
-} */
+.title, #zodiac {
+	margin-bottom: 20px;
+}
 
-#showText {
-/* 	background-color: #888;
-	opacity: 0.2;
-	display: none; */
+#text {
+	margin: 0 700px 20px;
 }
