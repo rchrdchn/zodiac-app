@@ -3,7 +3,7 @@ var allZodiac = [
 		zodiac: "aquarius",
 		strengths: "Progressive, original, independent, humanitarian",
 		weaknesses: "Runs from emotional expression, temperamental, uncompromising, aloof",
-		aquariusLikes: "Fun with friends, helping others, fighting for causes, intellectual conversation, a good listener",
+		likes: "Fun with friends, helping others, fighting for causes, intellectual conversation, a good listener",
 		element: "Air",
 		quality: "Fixed",
 		color: "Light-Blue, Silver",
@@ -18,7 +18,7 @@ var allZodiac = [
 		element: "Water",
 		strengths: "Compassionate, artistic, intuitive, gentle, wise, musical",
 		weaknesses: "Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr",
-		piscesLikes: "Being alone, sleeping, music, romance, visual media, swimming, spiritual themes",
+		likes: "Being alone, sleeping, music, romance, visual media, swimming, spiritual themes",
 		quality: "Mutable",
 		color: "Mauve, Lilac, Purple, Violet, Sea green",
 		day: "Thursday",
@@ -31,7 +31,7 @@ var allZodiac = [
 		zodiac: "aries",
 		strengths: "Courageous, determined, confident, enthusiastic, optimistic, honest, passionate",
 		weaknesses: "Impatient, moody, short-tempered, impulsive, aggressive",
-		ariesLikes: "Comfortable clothes, taking on leadership roles, physical challenges, individual sports",
+		likes: "Comfortable clothes, taking on leadership roles, physical challenges, individual sports",
 		element: "Fire",
 		quality: "Cardinal",
 		color: "Red",
@@ -45,7 +45,7 @@ var allZodiac = [
 		zodiac: "taurus",
 		strengths: "Reliable, patient, practical, devoted, responsible, stable",
 		weaknesses: "Stubborn, possessive, uncompromising",
-		taurusLikes: "Gardening, cooking, music, romance, high quality clothes, working with hands",
+		likes: "Gardening, cooking, music, romance, high quality clothes, working with hands",
 		element: "Earth",
 		quality: "Fixed",
 		color: "Green, Pink",
@@ -60,7 +60,7 @@ var allZodiac = [
 		zodiac: "gemini",
 		strengths: "Gentle, affectionate, curious, adaptable, ability to learn quickly and exchange ideas",
 		weaknesses: "Nervous, inconsistent, indecisive",
-		geminiLikes: "Music, books, magazines, chats with nearly anyone, short trips around the town",
+		likes: "Music, books, magazines, chats with nearly anyone, short trips around the town",
 		element: "Air",
 		quality: "Mutable",
 		color: "Light-Green, Yellow",
@@ -75,7 +75,7 @@ var allZodiac = [
 		zodiac: "cancer",
 		strengths: "Tenacious, highly imaginative, loyal, emotional, sympathetic, persuasive",
 		weaknesses: "Moody, pessimistic, suspicious, manipulative, insecure",
-		cancerLikes: "Art, home-based hobbies, relaxing near or in water, helping loved ones, a good meal with friends",
+		likes: "Art, home-based hobbies, relaxing near or in water, helping loved ones, a good meal with friends",
 		element: "Water",
 		quality: "Cardinal",
 		color: "White",
@@ -89,7 +89,7 @@ var allZodiac = [
 		zodiac: "leo",
 		strengths: "Creative, passionate, generous, warm-hearted, cheerful, humorous",
 		weaknesses: "Arrogant, stubborn, self-centered, lazy, inflexible",
-		leoLikes: "Theater, taking holidays, being admired, expensive things, bright colors, fun with friends",
+		likes: "Theater, taking holidays, being admired, expensive things, bright colors, fun with friends",
 		element: "Fire",
 		quality: "Fixed",
 		color: "Gold, Yellow, Orange",
@@ -103,7 +103,7 @@ var allZodiac = [
 		zodiac: "virgo",
 		strengths: "Loyal, analytical, kind, hardworking, practical",
 		weaknesses: "Shyness, worry, overly critical of self and others, all work and no play",
-		virgoLikes: "Animals, healthy food, books, nature, cleanliness",
+		likes: "Animals, healthy food, books, nature, cleanliness",
 		element: "Earth",
 		quality: "Mutable",
 		color: "Grey, Beige, Pale-Yellow",
@@ -117,7 +117,7 @@ var allZodiac = [
 		zodiac: "libra",
 		strengths: "Cooperative,diplomatic, gracious, fair-minded, social",
 		weaknesses: "Indecisive, avoids confrontations, will carry a grudge, self-pity",
-		libraLikes: "Harmony, gentleness, sharing with others, the outdoors",
+		likes: "Harmony, gentleness, sharing with others, the outdoors",
 		element: "Air",
 		quality: "Cardinal",
 		color: "Pink, Green",
@@ -131,7 +131,7 @@ var allZodiac = [
 		zodiac: "scorpio",
 		strengths: "Resourceful, brave, passionate, stubborn, a true friend",
 		weaknesses: "Distrusting, jealous, secretive, violent",
-		scorpioLikes: "Truth, facts, being right, longtime friends, teasing, a grand passion",
+		likes: "Truth, facts, being right, longtime friends, teasing, a grand passion",
 		element: "Water",
 		quality: "Fixed",
 		color: "Scarlet, Red, Rust",
@@ -145,7 +145,7 @@ var allZodiac = [
 		zodiac: "sagittarius",
 		strengths: "Generous, idealistic, great sense of humor",
 		weaknesses: "Promises more than can deliver, very impatient, will say anything no matter how undiplomatic",
-		sagittariusLikes: "Freedom, travel, philosophy, being outdoors",
+		likes: "Freedom, travel, philosophy, being outdoors",
 		element: "Fire",
 		quality: "Mutable",
 		color: "Blue",
@@ -159,7 +159,7 @@ var allZodiac = [
 		zodiac: "capricorn",
 		strengths: "Responsible, disciplined, self-control, good managers",
 		weaknesses: "Know-it-all, unforgiving, condescending, expecting the worst",
-		capricornLikes: "Family, tradition, music, understated status, quality craftsmanship",
+		likes: "Family, tradition, music, understated status, quality craftsmanship",
 		element: "Earth",
 		quality: "Cardinal",
 		color: "Brown, Black",
@@ -175,11 +175,33 @@ var allZodiac = [
 function getZodiac() {
 
 	var userInput = document.getElementById("input").value.toLowerCase();
-	
+
 	for (i = 0; i < allZodiac.length; i++) {
 		if (userInput == allZodiac[i].zodiac) {
 			document.getElementById("zodiac").innerHTML = allZodiac[i].zodiac;
-			document.getElementById("showText").innerHTML = allZodiac[i].strengths;
+			document.getElementById("dateRange").innerHTML = allZodiac[i].dateRange;
+			document.getElementById("strengths").innerHTML = allZodiac[i].strengths;
+			document.getElementById("weaknesses").innerHTML = allZodiac[i].weaknesses;
+			document.getElementById("likes").innerHTML = allZodiac[i].likes;
+			document.getElementById("luckyNumber").innerHTML = allZodiac[i].luckyNumbers;
+			document.getElementById("compatibility").innerHTML = allZodiac[i].compatibility;
 		} 
 	}
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
