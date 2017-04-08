@@ -1,4 +1,21 @@
-.title, .submit, #zodiac {
+* {
+	color: #333;
+	font-family: "Helvetica", sans-serif;
 	text-align: center;
 	text-transform: capitalize;
+}
+
+.title, #zodiac {
+	margin-bottom: 30px;
+}
+
+/* #input {
+	border-radius: 3px;
+    padding: 3px 50px;
+} */
+
+#showText {
+/* 	background-color: #888;
+	opacity: 0.2;
+	display: none; */
 }

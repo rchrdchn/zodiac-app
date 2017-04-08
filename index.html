@@ -40,22 +40,21 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="title">What is your Zodiac?</h1>
+				<h1 class="title">What is your zodiac? | Cual es tu signo zodiaco?</h1>
 			</div>
 
 			<div class="col-md-12 submit">
-				<input type="text" id="input">
-				<button type="button" id="submit" onclick="getZodiac()">Submit</button>
+				<input type="text" id="input" placeholder="Type a zodiac sign">
+				<button type="button" class="btn btn-primary" id="submit" onclick="getZodiac()">Submit</button>
 			</div>
-
-			<div class="col-md-12">
+			<div class="col-md-12" id="showText">
+				<img id="image">
 				<h2 id="zodiac"></h2>
 				<p id="dateRange"></p>
-				<p id="strengths"></p>
-				<p id="weaknesses"></p>
-				<p id="likes"></p>
-				<p id="luckyNumber"></p>
-				<p id="compatibility"></p>
+				<p id="text"></p>
+				<p id="compatibilityQuestion"></p>
+				<button type="button" class="btn btn-primary" id="yes"></button> <button type="button" class="btn btn-primary" id="no"></button>
+				<p id="compatibilityAnswer"></p>
 			</div>
 		</div>
 	</div>

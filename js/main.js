@@ -1,174 +1,87 @@
 var allZodiac = [
 	{
 		zodiac: "aquarius",
-		strengths: "Progressive, original, independent, humanitarian",
-		weaknesses: "Runs from emotional expression, temperamental, uncompromising, aloof",
-		likes: "Fun with friends, helping others, fighting for causes, intellectual conversation, a good listener",
-		element: "Air",
-		quality: "Fixed",
-		color: "Light-Blue, Silver",
-		day: "Saturday",
-		ruler: "Uranus, Saturn",
+		text: "Things get adventurous this week. You know how you always want to order that other dish at Thai but then you’re like “what if I don’t like it and then I’ve wasted all this money when I could have just ordered Pad Thai which I already know that I like”? Well this week Aquarius, you take the plunge. Also, get a more interesting life. That is grim.",
 		compatibility: "Leo, Sagittarius",
-		luckyNumbers: "4, 7, 11, 22, 29",
-		dateRange: "January 20 - February 18"
+		dateRange: "January 20 - February 18",
+		image: "images/aquarius"
 	},
 	{
 		zodiac: "pisces",
-		element: "Water",
-		strengths: "Compassionate, artistic, intuitive, gentle, wise, musical",
-		weaknesses: "Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr",
-		likes: "Being alone, sleeping, music, romance, visual media, swimming, spiritual themes",
-		quality: "Mutable",
-		color: "Mauve, Lilac, Purple, Violet, Sea green",
-		day: "Thursday",
-		ruler: "Neptune, Jupiter",
+		text: "You will encounter frustration this week when you come across a Capricorn trying to research an animal that I made up. Just remember: snitches get stitches.",
 		compatibility: "Virgo, Taurus",
-		luckyNumbers: "3, 9, 12, 15, 18, 24",
-		dateRange: "February 19 - March 20"
+		dateRange: "February 19 - March 20",
+		image: "images/pisces"
 	},
 	{
 		zodiac: "aries",
-		strengths: "Courageous, determined, confident, enthusiastic, optimistic, honest, passionate",
-		weaknesses: "Impatient, moody, short-tempered, impulsive, aggressive",
-		likes: "Comfortable clothes, taking on leadership roles, physical challenges, individual sports",
-		element: "Fire",
-		quality: "Cardinal",
-		color: "Red",
-		day: "Tuesday",
-		ruler: "Mars",
+		text: "The rising moon on the tipped axis of Uranus says you were once born, and at some point in the next few days or weeks you will meet someone else who was once born. You will exchange words that may or may not be interesting. Also – Uranus. Ha.",
 		compatibility: "Libra, Leo",
-		luckyNumbers: "1, 8, 17",
-		dateRange: "March 21 - April 19"
+		dateRange: "March 21 - April 19",
+		image: "images/aries"
 	},
 	{
 		zodiac: "taurus",
-		strengths: "Reliable, patient, practical, devoted, responsible, stable",
-		weaknesses: "Stubborn, possessive, uncompromising",
-		likes: "Gardening, cooking, music, romance, high quality clothes, working with hands",
-		element: "Earth",
-		quality: "Fixed",
-		color: "Green, Pink",
-		day: "Friday, Monday",
-		ruler: "Venus",
+		text: "You will find your soulmate this week. Look to your left. You will be passionately kissing that person by the end of the year. If there’s nobody sitting there…Well, sucks to be you I guess. #sadface",
 		compatibility: "Scorpio, Cancer",
-		luckyNumbers: "2, 6, 9, 12, 24",
-		dateRange: "April 20 - May 20"
-		
+		dateRange: "April 20 - May 20",
+		image: "images/taurus"
 	},
 	{
 		zodiac: "gemini",
-		strengths: "Gentle, affectionate, curious, adaptable, ability to learn quickly and exchange ideas",
-		weaknesses: "Nervous, inconsistent, indecisive",
-		likes: "Music, books, magazines, chats with nearly anyone, short trips around the town",
-		element: "Air",
-		quality: "Mutable",
-		color: "Light-Green, Yellow",
-		day: "Wednesday",
-		ruler: "Mercury",
+		text: "Geminis are known for their incredible wit, astounding intelligence and breathtaking beauty. Just keep being awesome, Hot Stuff.",
 		compatibility: "Sagittarius, Aquarius",
-		luckyNumbers: "5, 7, 14, 23",
 		dateRange: "May 21 - June 20",
-		
+		image: "images/gemini"
 	},
 	{
 		zodiac: "cancer",
-		strengths: "Tenacious, highly imaginative, loyal, emotional, sympathetic, persuasive",
-		weaknesses: "Moody, pessimistic, suspicious, manipulative, insecure",
-		likes: "Art, home-based hobbies, relaxing near or in water, helping loved ones, a good meal with friends",
-		element: "Water",
-		quality: "Cardinal",
-		color: "White",
-		day: "Monday, Thursday",
-		ruler: "Moon",
+		text: "You are very astute. You figured out that I’m a Gemini. Unfortunately, those detective skills will fail you this week when – actually, you figure it out Sherlock. Stop being so cocky.",
 		compatibility: "Capricorn, Taurus",
-		luckyNumbers: "2, 3, 15, 20",
-		dateRange: "June 21 - July 22"
+		dateRange: "June 21 - July 22",
+		image: "images/cancer"
 	},
 	{
 		zodiac: "leo",
-		strengths: "Creative, passionate, generous, warm-hearted, cheerful, humorous",
-		weaknesses: "Arrogant, stubborn, self-centered, lazy, inflexible",
-		likes: "Theater, taking holidays, being admired, expensive things, bright colors, fun with friends",
-		element: "Fire",
-		quality: "Fixed",
-		color: "Gold, Yellow, Orange",
-		day: "Sunday",
-		ruler: "Sun",
+		text: "Remember how that movie Inception ended really ambiguously and the director was all “I want you to decide if the thingy stops spinning” and we were all “um no you’re the director it’s your job to make a decision”? I totally get why Christopher Nolan did that now. It takes away heaps of the work and makes you seem really insightful. Watch, I’m going to do it now to Virgo…",
 		compatibility: "Aquarius, Gemini",
-		luckyNumbers: "1, 3, 10, 19",
-		dateRange: "July 23 - August 22"
+		dateRange: "July 23 - August 22",
+		image: "images/leo"
 	},
 	{
 		zodiac: "virgo",
-		strengths: "Loyal, analytical, kind, hardworking, practical",
-		weaknesses: "Shyness, worry, overly critical of self and others, all work and no play",
-		likes: "Animals, healthy food, books, nature, cleanliness",
-		element: "Earth",
-		quality: "Mutable",
-		color: "Grey, Beige, Pale-Yellow",
-		day: "Wednesday",
-		ruler: "Mercury",
+		text: "Your week will be determined by how you interpret this spinning top. There’s no right or wrong answer. Don’t get it wrong.",
 		compatibility: "Pisces, Cancer",
-		luckyNumbers: "5, 14, 15, 23, 32",
-		dateRange: "August 23 – September 22"
+		dateRange: "August 23 – September 22",
+		image: "images/virgo"
 	},
 	{
 		zodiac: "libra",
-		strengths: "Cooperative,diplomatic, gracious, fair-minded, social",
-		weaknesses: "Indecisive, avoids confrontations, will carry a grudge, self-pity",
-		likes: "Harmony, gentleness, sharing with others, the outdoors",
-		element: "Air",
-		quality: "Cardinal",
-		color: "Pink, Green",
-		day: "Friday",
-		ruler: "Venus",
+		text: "This week, the stars indicate that you need to stop being so jealous all the time. Don’t deny it – I know you’re peeved about that inside joke me and Leo just had about Virgo. Oh and by the way, I forgot to give Leo a prediction. Just tell them that they’ll have to make a big decision this week or some crap. Thanks man.",
 		compatibility: "Aries, Sagittarius",
-		luckyNumbers: "4, 6, 13, 15, 24",
-		dateRange: "September 23 - October 22"
+		dateRange: "September 23 - October 22",
+		image: "images/libra"
 	},
 	{
 		zodiac: "scorpio",
-		strengths: "Resourceful, brave, passionate, stubborn, a true friend",
-		weaknesses: "Distrusting, jealous, secretive, violent",
-		likes: "Truth, facts, being right, longtime friends, teasing, a grand passion",
-		element: "Water",
-		quality: "Fixed",
-		color: "Scarlet, Red, Rust",
-		day: "Tuesday",
-		ruler: "Pluto, Mars",
+		text: "The equilibrium of Saturn’s seventh moon alignment with Pluto puts the sun in your water axis this week. That could go either way, so try not to do too much speaking or walking or living.",
 		compatibility: "Taurus, Cancer",
-		luckyNumbers: "8, 11, 18, 22",
-		dateRange: "October 23 - November 21"
+		dateRange: "October 23 - November 21",
+		image: "images/scorpio"
 	},
 	{
 		zodiac: "sagittarius",
-		strengths: "Generous, idealistic, great sense of humor",
-		weaknesses: "Promises more than can deliver, very impatient, will say anything no matter how undiplomatic",
-		likes: "Freedom, travel, philosophy, being outdoors",
-		element: "Fire",
-		quality: "Mutable",
-		color: "Blue",
-		day: "Thursday",
-		ruler: "Jupiter",
+		text: "This week, everything will become just as clear as it is unclear. Because when a blind man holds the key to life’s acorn tree, purple monkey dishwasher.",
 		compatibility: "Gemini, Aries",
-		luckyNumbers: "3, 7, 9, 12, 21",
-		dateRange: "November 22 - December 21"
+		dateRange: "November 22 - December 21",
+		image: "images/sagittarius"
 	},
 	{
 		zodiac: "capricorn",
-		strengths: "Responsible, disciplined, self-control, good managers",
-		weaknesses: "Know-it-all, unforgiving, condescending, expecting the worst",
-		likes: "Family, tradition, music, understated status, quality craftsmanship",
-		element: "Earth",
-		quality: "Cardinal",
-		color: "Brown, Black",
-		day: "Saturday",
-		ruler: "Saturn",
+		text: "It’s imperative that you spend the next 7 days learning everything there is to know about the migration habits of the North African YellowStone Frog. It has to do with you winning a lot of money, so just do it.",
 		compatibility: "Taurus, Cancer",
-		luckyNumbers: "4, 8, 13, 22",
-		dateRange: "December 22 - January 19"
-		
+		dateRange: "December 22 - January 19",
+		image: "images/capricorn.jpg"
 	}
 ];
 
@@ -180,12 +93,14 @@ function getZodiac() {
 		if (userInput == allZodiac[i].zodiac) {
 			document.getElementById("zodiac").innerHTML = allZodiac[i].zodiac;
 			document.getElementById("dateRange").innerHTML = allZodiac[i].dateRange;
-			document.getElementById("strengths").innerHTML = allZodiac[i].strengths;
-			document.getElementById("weaknesses").innerHTML = allZodiac[i].weaknesses;
-			document.getElementById("likes").innerHTML = allZodiac[i].likes;
-			document.getElementById("luckyNumber").innerHTML = allZodiac[i].luckyNumbers;
-			document.getElementById("compatibility").innerHTML = allZodiac[i].compatibility;
-		} 
+			document.getElementById("text").innerHTML = allZodiac[i].text;
+			document.getElementById("yes").innerHTML = "<button>Yes</button>";
+			document.getElementById("no").innerHTML;
+			return
+		} else {
+			document.getElementById("zodiac").innerHTML = "Undefined";
+			document.getElementById("zodiac").innerHTML = "Are you sure you're from this planet?";
+		}
 	}
 };
 
