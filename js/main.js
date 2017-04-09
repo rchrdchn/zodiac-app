@@ -1,3 +1,5 @@
+// Creating an array of objects for all Zodiac signs with text, date range, and image.
+
 var allZodiac = [
 	{
 		zodiac: "aquarius",
@@ -85,28 +87,35 @@ var allZodiac = [
 	}
 ];
 
+// this function is the logic for what shows up in the screen when user type and submit zodiac sign
+
 function getZodiac() {
 
-	var userInput = document.getElementById("input").value.toLowerCase();
+	// gets user input value in input box
+	var userInput = document.getElementById("input").value.toLowerCase(); 
 
+	// the for loop will iterate through each zodiac sign from the array object until it finds the correct one
 	for (i = 0; i < allZodiac.length; i++) {
 		if (userInput == allZodiac[i].zodiac) {
 			document.getElementById("zodiac").innerHTML = allZodiac[i].zodiac;
 			document.getElementById("dateRange").innerHTML = allZodiac[i].dateRange;
 			document.getElementById("image").src = allZodiac[i].image;
 			document.getElementById("text").innerHTML = allZodiac[i].text;
-			document.getElementById("yes").innerHTML = "<button>Yes</button>"
-			document.getElementById("no").innerHTML = "<button>No</button>";
-
-			var yes = document.getElementById("yes").value;
+			document.getElementsByTagName("html").innerHTML
 			
-			if (userInput == yes) {
-				document.getElementById("compatibilityAnswer").innerHTML = allZodiac[i].compatibility;
-			} else {
-				document.getElementById("compatibilityAnswer").innerHTML = "Good luck!";
-			}
+			// document.getElementById("yes").innerHTML = "<button>Yes</button>"
+			// document.getElementById("no").innerHTML = "<button>No</button>";
+			
+			// var yes = document.getElementById("yes").value;
+			
+			// if (userInput == yes) {
+			// 	document.getElementById("compatibilityAnswer").innerHTML = allZodiac[i].compatibility;
+			// } else {
+			// 	document.getElementById("compatibilityAnswer").innerHTML = "Good luck!";
+			// }
 			return
 		} else {
+			// if user submits a zodiac sign that is not in the array object this will show up as a result
 			document.getElementById("zodiac").innerHTML = "Undefined";
 			document.getElementById("image").innerHTML = "";
 			document.getElementById("dateRange").innerHTML = "";
