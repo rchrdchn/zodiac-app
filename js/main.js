@@ -95,9 +95,14 @@ function getZodiac() {
 			document.getElementById("dateRange").innerHTML = allZodiac[i].dateRange;
 			document.getElementById("image").src = allZodiac[i].image;
 			document.getElementById("text").innerHTML = allZodiac[i].text;
-			// document.getElementById("yes").innerHTML = "<button>Yes</button>";
-			// document.getElementById("no").innerHTML = "<button>No</button>";
-			// { if ()}
+			document.getElementById("yes").innerHTML = "<button>Yes</button>";
+			document.getElementById("no").innerHTML = "<button>No</button>";
+			{ if (userInput == yes) {
+				document.getElementById("compatibilityAnswer").innerHTML = allZodiac[i].compatibility;
+			} else {
+				document.getElementById("compatibilityAnswer").innerHTML = "Good luck!";
+			}
+		}
 			return
 		} else {
 			document.getElementById("zodiac").innerHTML = "Undefined";
@@ -107,7 +112,6 @@ function getZodiac() {
 		}
 	}
 };
-
 
 
 
