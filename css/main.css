@@ -2,7 +2,13 @@
 	color: #333;
 	font-family: "Helvetica", sans-serif;
 	text-align: center;
+	
 	/* text-transform: capitalize; */
+}
+
+.showImage {
+	background-image: url('http://www.clipartbest.com/cliparts/9c4/6R8/9c46R8Mgi.png');
+
 }
 
 .title {
@@ -14,5 +20,6 @@
 }
 
 #text {
-	margin: 0 700px 20px;
+	margin: 0 150px;
+	font-family: "Verdana", sans-serif;
 }

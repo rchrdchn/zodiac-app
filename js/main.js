@@ -101,7 +101,7 @@ function getZodiac() {
 			document.getElementById("dateRange").innerHTML = allZodiac[i].dateRange;
 			document.getElementById("image").src = allZodiac[i].image;
 			document.getElementById("text").innerHTML = allZodiac[i].text;
-			document.getElementsByTagName("html").innerHTML
+			$("body").src = allZodiac[i].image;
 			
 			// document.getElementById("yes").innerHTML = "<button>Yes</button>"
 			// document.getElementById("no").innerHTML = "<button>No</button>";
@@ -123,11 +123,6 @@ function getZodiac() {
 		}
 	}
 };
-
-
-
-
-
 
 
 

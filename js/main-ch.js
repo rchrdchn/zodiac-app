@@ -74,15 +74,17 @@ var chineseZodiac = [
 ]
 
 function chineseZodiac() {
-	var userInput = document.getElementbyId("userInput").value.toLowerCase();
+	var userInput = document.getElementbyId("input").value;
 
-	var zodiac = document.getElementById("zodiac").innerHTML = chineseZodiac[i].zodiac;
-	var image = document.getElementById("image").src = chineseZodiac[i].image;
-	var personality = document.getElementById("text").innerHTML = chineseZodiac[i].text;
 
 	for (i = 0; i < chineseZodiac.length; i++) {
-		if (userInput == chineseZodiac.year[i] ) {
-			
+		if (userInput == 1988 ) {
+			var zodiac = document.getElementById("zodiac").innerHTML = chineseZodiac[i].zodiac;
+			var image = document.getElementById("image").src = chineseZodiac[i].image;
+			var personality = document.getElementById("text").innerHTML = chineseZodiac[i].text;
+
+			console.log("dragon");
+			// return
 		}
 	}
 }
