@@ -102,13 +102,14 @@ function getZodiac() {
 			document.getElementById("image").src = allZodiac[i].image;
 			document.getElementById("text").innerHTML = allZodiac[i].text;
 			$("body").src = allZodiac[i].image;
+			document.getElementById("showText").addClass(textActive);
 
 			return;
 
 		} else {
 			// if user submits a zodiac sign that is not in the array object this will show up as a result
 			document.getElementById("zodiac").innerHTML = "Undefined";
-			document.getElementById("image").innerHTML = "";
+			document.getElementById("image").src = "";
 			document.getElementById("dateRange").innerHTML = "";
 			document.getElementById("text").innerHTML = "Are you sure you're from this planet?";
 		}
