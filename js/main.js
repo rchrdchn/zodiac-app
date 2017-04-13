@@ -97,23 +97,14 @@ function getZodiac() {
 	// the for loop will iterate through each zodiac sign from the array object until it finds the correct one
 	for (i = 0; i < allZodiac.length; i++) {
 		if (userInput == allZodiac[i].zodiac) {
-			document.getElementById("zodiac").innerHTML = allZodiac[i].zodiac;
+			document.getElementById("zodiac").innerHTML = allZodiac[i].zodiac.toUpperCase();
 			document.getElementById("dateRange").innerHTML = allZodiac[i].dateRange;
 			document.getElementById("image").src = allZodiac[i].image;
 			document.getElementById("text").innerHTML = allZodiac[i].text;
 			$("body").src = allZodiac[i].image;
-			
-			// document.getElementById("yes").innerHTML = "<button>Yes</button>"
-			// document.getElementById("no").innerHTML = "<button>No</button>";
-			
-			// var yes = document.getElementById("yes").value;
-			
-			// if (userInput == yes) {
-			// 	document.getElementById("compatibilityAnswer").innerHTML = allZodiac[i].compatibility;
-			// } else {
-			// 	document.getElementById("compatibilityAnswer").innerHTML = "Good luck!";
-			// }
-			return
+
+			return;
+
 		} else {
 			// if user submits a zodiac sign that is not in the array object this will show up as a result
 			document.getElementById("zodiac").innerHTML = "Undefined";
